@@ -1,34 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+### Dependencies
+
+Check if additional dependencies are required/listed and updated. 
+
+Here are the core additional dependencies for this project:
+
+#### dependencies
+
+- @contentful/rich-text-react-renderer
+- contentful
+- graphql
+- graphql-request
+- tinytime
+
+#### devDependencies
+
+- @tailwindcss/typography
+- autoprefixer
+- postcss
+- tailwindcss
+
+### Adding a dependency
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn add [package]
+yarn add [package]@[version]
+yarn add [package]@[tag]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Add to `devDependencies`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+yarn add [package] --dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Upgrading a dependency
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+yarn upgrade [package]
+yarn upgrade [package]@[version]
+yarn upgrade [package]@[tag]
+```
 
-## Learn More
+### Removing a dependency
+```bash
+yarn remove [package]
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Installing all the dependencies of project
+```bash
+yarn
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+or
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+yarn install
+```
 
-## Deploy on Vercel
+## File Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── components
+│   └── blogDetail
+│       ├── index.jsx
+│       └── styles.js
+│
+├── pages
+│   ├── _app.js
+│   ├── index.js
+│   └── about
+│       └── index.jsx
+│
+├── public
+│   ├── img
+│   │   └── sample.jpg
+│   └── img
+│       └── sample.jpg
+│
+└── utils
+    └── queries.js
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This is the folder structure of the project
