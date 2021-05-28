@@ -119,7 +119,7 @@ export default function AboutDetail ({ about }) {
 
 `styles.js` contains all of our style in a specifc components like so:
 ```JavaScript
-/* components/aboutDetail/style.js */
+/* components/aboutDetail/styles.js */
 export const styles = {
   article: `
     grid
@@ -192,9 +192,8 @@ module.exports = {
 
 ### tailwindcss
 
-Create configuration files 
 
-```bash
-npx tailwindcss init -p
-```
+
+You can read in depth documentation for NextJS [here](https://tailwindcss.com/docs/guides/nextjs)
+
 

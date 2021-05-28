@@ -5,8 +5,8 @@ export default function Home () {
   return (
     <div>
       <Head>
-        <title>Boilerplate Graphcms</title>
-        <meta name='description' content='Boilerplate for websites using graphcms' />
+        <title>Boilerplate Contentful</title>
+        <meta name='description' content='Boilerplate for websites using Contentful APIs' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
