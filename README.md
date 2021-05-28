@@ -118,7 +118,7 @@ export default function AboutDetail ({ about }) {
 ```
 
 `styles.js` contains all of our style in a specifc components like so:
-```jsx
+```JavaScript
 /* components/aboutDetail/style.js */
 export const styles = {
   article: `
@@ -175,3 +175,17 @@ We use this configuration to easily import modules in this manner:
 import Card from '@/components/card/index'
 ```
 Where `@` is the root project directory for development
+
+### `next.config.js`
+
+```JavaScript
+module.exports = {
+  pageExtensions: ['jsx', 'js'],
+  images: {
+    domains: ['images.ctfassets.net']
+  }
+}
+```
+
+- `pageExtensions` let us work with other files like `jsx`
+- `images` let us use the `Image` component from NextJS when the images are coming from a third party source
