@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Homepage from '@/components/homepage/index'
 
 export default function Home () {
   return (
@@ -11,7 +11,7 @@ export default function Home () {
       </Head>
 
       <main>
-        <h1 className='text-xl'>Hello World</h1>
+        <Homepage />
       </main>
     </div>
   )

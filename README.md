@@ -62,16 +62,17 @@ yarn install
 ## File Structure
 
 ```
-├── components
-│   └── blogDetail
-│       ├── index.jsx
-│       └── styles.js
-│
-├── pages
-│   ├── _app.js
-│   ├── index.js
-│   └── about
-│       └── index.jsx
+├── src
+│   ├── components
+│   │    └── blogDetail
+│   │       ├── index.jsx
+│   │       └── styles.js
+│   │
+│   └── pages
+│          ├── _app.js
+│          ├── index.js
+│          └── about
+│              └── index.jsx
 │
 ├── public
 │   ├── images
@@ -162,9 +163,7 @@ export const styles = {
   "compilerOptions": {
     "baseUrl": "node_modules",
     "paths": {
-      "@/*": [
-        "../*"
-      ]
+      "@/*": ["../src/*"]
     }
   }
 }
@@ -174,7 +173,6 @@ We use this configuration to easily import modules in this manner:
 ```jsx
 import Card from '@/components/card/index'
 ```
-Where `@` is the root project directory for development
 
 ### `next.config.js`
 
