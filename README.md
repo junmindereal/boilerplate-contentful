@@ -189,3 +189,12 @@ module.exports = {
 
 - `pageExtensions` let us work with other files like `jsx`
 - `images` let us use the `Image` component from NextJS when the images are coming from a third party source
+
+### tailwindcss
+
+Create configuration files 
+
+```bash
+npx tailwindcss init -p
+```
+
