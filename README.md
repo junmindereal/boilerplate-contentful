@@ -62,26 +62,27 @@ yarn install
 ## File Structure
 
 ```
-├── src
-│   ├── components
-│   │    └── blogDetail
-│   │       ├── index.jsx
-│   │       └── styles.js
-│   │
-│   └── pages
-│          ├── _app.js
-│          ├── index.js
-│          └── about
-│              └── index.jsx
-│
 ├── public
-│   ├── images
-│   │   └── sample.jpg
-│   └── fonts
-│       └── inter-var-latin.woff2
-│
-└── utils
-    └── queries.js
+│    ├── images
+│    │    └── sample.jpg
+│    └── fonts
+│         └── inter-var-latin.woff2
+└── src
+     ├── components
+     │    └── blogDetail
+     │       ├── index.jsx
+     │       └── styles.js
+     ├── utils
+     │    └── queries.js
+     │       
+     │      
+     │
+     └── pages
+            ├── _app.js
+            ├── index.js
+            └── about
+                └── index.jsx
+
 ```
 
 ### Components
