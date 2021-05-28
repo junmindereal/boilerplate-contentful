@@ -152,3 +152,26 @@ export const styles = {
 }
 
 ```
+
+## Configuration
+
+### `jsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "node_modules",
+    "paths": {
+      "@/*": [
+        "../*"
+      ]
+    }
+  }
+}
+```
+
+We use this configuration to easily import modules in this manner:
+```jsx
+import Card from '@/components/card/index'
+```
+Where `@` is the root project directory for development
