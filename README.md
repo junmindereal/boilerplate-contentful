@@ -69,7 +69,7 @@ yarn install
 │         └── inter-var-latin.woff2
 └── src
      ├── components
-     │    └── blogDetail
+     │    └── BlogDetail
      │       ├── index.jsx
      │       └── styles.js
      ├── utils
